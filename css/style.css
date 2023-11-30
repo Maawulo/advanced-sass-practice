@@ -14,21 +14,21 @@ body {
 
 @font-face {
   font-family: "Lulo Clean One Bold";
-  src: url("../../media/font/Lulo Clean One Bold/Lulo Clean One Bold.eot");
+  src: url("../media/font/Lulo Clean One Bold/Lulo Clean One Bold.eot");
   /* IE9 Compat Modes */
-  src: url("../../media/font/Lulo Clean One Bold/Lulo Clean One Bold.eot?#iefix") format("embedded-opentype"), url("../../media/font/Lulo Clean One Bold/Lulo Clean One Bold.woff") format("woff"), url("../../media/font/Lulo Clean One Bold/Lulo Clean One Bold.ttf") format("truetype"); }
+  src: url("../media/font/Lulo Clean One Bold/Lulo Clean One Bold.eot?#iefix") format("embedded-opentype"), url("../media/font/Lulo Clean One Bold/Lulo Clean One Bold.woff") format("woff"), url("../media/font/Lulo Clean One Bold/Lulo Clean One Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Avenir Light";
-  src: url("../../media/font/Avenir Light/Avenir Light.eot");
+  src: url("../media/font/Avenir Light/Avenir Light.eot");
   /* IE9 Compat Modes */
-  src: url("../../media/font/Avenir Light/Avenir Light.eot?#iefix") format("embedded-opentype"), url("../../media/font/Avenir Light/Avenir Light.woff") format("woff"), url("../../media/font/Avenir Light/Avenir Light.ttf") format("truetype"); }
+  src: url("../media/font/Avenir Light/Avenir Light.eot?#iefix") format("embedded-opentype"), url("../media/font/Avenir Light/Avenir Light.woff") format("woff"), url("../media/font/Avenir Light/Avenir Light.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Avenir Heavy";
-  src: url("../../media/font/Avenir Heavy/Avenir Heavy.eot");
+  src: url("../media/font/Avenir Heavy/Avenir Heavy.eot");
   /* IE9 Compat Modes */
-  src: url("../../media/font/Avenir Heavy/Avenir Heavy.eot?#iefix") format("embedded-opentype"), url("../../media/font/Avenir Heavy/Avenir Heavy.woff") format("woff"), url("../../media/font/Avenir Heavy/Avenir Heavy.ttf") format("truetype"); }
+  src: url("../media/font/Avenir Heavy/Avenir Heavy.eot?#iefix") format("embedded-opentype"), url("../media/font/Avenir Heavy/Avenir Heavy.woff") format("woff"), url("../media/font/Avenir Heavy/Avenir Heavy.ttf") format("truetype"); }
 
 body {
   font-family: "Avenir Light";
@@ -190,7 +190,7 @@ body {
 
 .booking {
   grid-column: full-start / full-end;
-  background-image: url("../../media/cards-bg.webp");
+  background-image: url("../media/cards-bg.webp");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -306,7 +306,7 @@ body {
 .welcome {
   grid-column: full-start / full-end;
   grid-row: 1 / 2;
-  background-image: url("../../media/intro-bg.webp");
+  background-image: url("../media/intro-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
