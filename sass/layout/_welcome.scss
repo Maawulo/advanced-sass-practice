@@ -1,0 +1,17 @@
+.welcome {
+    grid-column: full-start / full-end;
+    grid-row: 1 / 2;
+    background-image: url("../../media/intro-bg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 8rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__available {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+}

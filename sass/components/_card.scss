@@ -1,0 +1,31 @@
+.card {
+    width: 29rem;
+    height: 40rem;
+    padding: 3rem;
+    margin: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border: 7px solid $color-black;
+
+    &__heading,
+    &__description {
+        margin-bottom: 2rem;
+    }
+
+    &__description::after {
+        content: "";
+        display: block;
+        background-color: $color-black;
+        height: 2px;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    & .btn {
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+}

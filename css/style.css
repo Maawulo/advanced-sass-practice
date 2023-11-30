@@ -1,1 +1,319 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
 
+html {
+  font-size: 62.5%;
+  background-color: #57bbbf; }
+
+body {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "Lulo Clean One Bold";
+  src: url("../../media/font/Lulo Clean One Bold/Lulo Clean One Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../../media/font/Lulo Clean One Bold/Lulo Clean One Bold.eot?#iefix") format("embedded-opentype"), url("../../media/font/Lulo Clean One Bold/Lulo Clean One Bold.woff") format("woff"), url("../../media/font/Lulo Clean One Bold/Lulo Clean One Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Avenir Light";
+  src: url("../../media/font/Avenir Light/Avenir Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../../media/font/Avenir Light/Avenir Light.eot?#iefix") format("embedded-opentype"), url("../../media/font/Avenir Light/Avenir Light.woff") format("woff"), url("../../media/font/Avenir Light/Avenir Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url("../../media/font/Avenir Heavy/Avenir Heavy.eot");
+  /* IE9 Compat Modes */
+  src: url("../../media/font/Avenir Heavy/Avenir Heavy.eot?#iefix") format("embedded-opentype"), url("../../media/font/Avenir Heavy/Avenir Heavy.woff") format("woff"), url("../../media/font/Avenir Heavy/Avenir Heavy.ttf") format("truetype"); }
+
+body {
+  font-family: "Avenir Light";
+  color: black; }
+
+.btn {
+  font-family: "Avenir Light";
+  font-size: 1.6rem; }
+
+.header__name {
+  font-family: "Lulo Clean One Bold";
+  font-size: 1.7rem;
+  text-transform: uppercase; }
+
+.header__profession {
+  font-family: "Avenir Light";
+  font-size: 1.4rem;
+  letter-spacing: 2.1px; }
+
+.header .navigation > * {
+  font-family: "Avenir Light";
+  font-size: 1.5rem; }
+
+.welcome__heading--primary {
+  font-family: "Lulo Clean One Bold";
+  font-size: 11rem;
+  font-weight: 400;
+  line-height: 13rem; }
+
+.welcome__heading--secondary {
+  font-family: "Avenir Heavy";
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+
+.welcome__available {
+  font-family: "Avenir Light";
+  font-size: 2.3rem;
+  font-weight: 400;
+  letter-spacing: 1.15px; }
+
+.about__text__header {
+  font-family: "Lulo Clean One Bold";
+  font-size: 4.2rem;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.about__text__paragraph {
+  font-family: "Avenir Light";
+  font-size: 1.5rem;
+  font-weight: 400; }
+
+.booking__heading {
+  font-family: "Lulo Clean One Bold";
+  font-size: 4.2rem;
+  font-weight: 400;
+  letter-spacing: -4.2px;
+  line-height: 5rem; }
+
+.card {
+  font-family: "Avenir Light";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.25rem; }
+  .card__heading {
+    font-family: "Lulo Clean One Bold";
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.66rem;
+    text-transform: uppercase; }
+
+.footer__heading {
+  font-family: "Lulo Clean One Bold";
+  font-size: 1.7rem;
+  font-weight: 400; }
+
+.footer__contacts:not(h3) {
+  font-size: 1.5rem;
+  letter-spacing: 0.3px;
+  line-height: 2.55rem; }
+
+.footer__form > * {
+  font-family: "Avenir Light";
+  font-size: 1.7rem;
+  line-height: 1.7rem; }
+
+.line--black {
+  background-color: black;
+  width: 4rem;
+  height: 2px; }
+
+.btn {
+  width: 13rem;
+  height: 4rem;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer; }
+  .btn--black {
+    background-color: black;
+    border: 2px solid black;
+    color: white; }
+  .btn-hover--white:hover {
+    background-color: white;
+    color: black; }
+
+.card {
+  width: 29rem;
+  height: 40rem;
+  padding: 3rem;
+  margin: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border: 7px solid black; }
+  .card__heading, .card__description {
+    margin-bottom: 2rem; }
+  .card__description::after {
+    content: "";
+    display: block;
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    margin-top: 2rem; }
+  .card .btn {
+    margin-top: auto;
+    margin-bottom: 0; }
+
+.about {
+  background-color: white;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: subgrid; }
+  .about__text {
+    grid-column: 2 / 6;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .about__text__header {
+      margin: 3rem 0;
+      line-height: 5rem;
+      letter-spacing: -4.2px; }
+    .about__text__paragraph {
+      width: 80%;
+      margin: 2.5rem 0;
+      line-height: 2.55rem; }
+    .about__text .btn {
+      margin: 3rem 0; }
+  .about figure {
+    grid-column: 6 / -1; }
+  .about__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left; }
+
+.booking {
+  grid-column: full-start / full-end;
+  background-image: url("../../media/cards-bg.webp");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: repeat(2, min-content); }
+  .booking > * {
+    margin: 3rem 0; }
+  .booking__heading {
+    grid-column: center-start / center-end;
+    grid-row: 1 / 2; }
+    .booking__heading .line--black {
+      margin-bottom: 3rem; }
+  .booking .cards {
+    margin: 3rem 0;
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); }
+  .booking .btn {
+    grid-column: center-start / center-end;
+    justify-self: center;
+    width: 20rem; }
+
+.footer {
+  grid-column: center-start / center-end;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  display: grid;
+  grid-template-columns: subgrid; }
+  .footer__heading::before {
+    content: "";
+    background-color: currentColor;
+    width: 10%;
+    height: 2px;
+    display: block;
+    margin-bottom: 1rem; }
+  .footer__contacts {
+    grid-column: 1 / 5;
+    width: 37rem;
+    display: flex;
+    flex-direction: column; }
+    .footer__contacts > *:not(:last-child) {
+      margin-bottom: 3rem; }
+  .footer__form {
+    grid-column: 5 / -1;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column; }
+    .footer__form > p {
+      margin-bottom: 2rem; }
+    .footer__form input {
+      border: 2px solid black;
+      background-color: transparent;
+      margin-bottom: 2rem; }
+    .footer__form__message__input {
+      height: 10rem; }
+    .footer__form > button {
+      align-self: flex-end; }
+  .footer__socials svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer; }
+    .footer__socials svg:not(:last-child) {
+      margin-right: 1rem; }
+
+.grid-container {
+  padding-top: 13.5rem;
+  display: grid;
+  grid-template-rows: 95vh repeat(3, min-content);
+  grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 11.75rem) [col-end]) [center-end] minmax(5rem, 1fr) [full-end]; }
+
+.header {
+  background-color: white;
+  height: 13.5rem;
+  width: 100%;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr max-content 1fr;
+  justify-items: center;
+  align-items: center; }
+  .header__name-box {
+    margin-top: -1.5rem;
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    grid-column: 2 / 3; }
+
+.navigation {
+  margin-top: -2.8rem;
+  grid-column: 3 / 4;
+  display: flex; }
+  .navigation li {
+    display: inline-block; }
+  .navigation__item {
+    padding: 0 1.5rem; }
+
+.login-button {
+  margin-left: 3rem;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .login-button__icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    fill: grey;
+    margin-right: 1.2rem; }
+
+.welcome {
+  grid-column: full-start / full-end;
+  grid-row: 1 / 2;
+  background-image: url("../../media/intro-bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 8rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .welcome__available {
+    margin-top: 2rem;
+    margin-bottom: 3rem; }

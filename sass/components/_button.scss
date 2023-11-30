@@ -1,0 +1,18 @@
+.btn {
+    width: 13rem;
+    height: 4rem;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &--black {
+        background-color: $color-black;
+        border: 2px solid $color-black;
+        color: $color-white;
+    }
+
+    &-hover--white:hover {
+        background-color: $color-white;
+        color: $color-black;
+    }
+}

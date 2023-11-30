@@ -1,0 +1,65 @@
+.footer {
+    grid-column: center-start / center-end;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+
+    display: grid;
+    grid-template-columns: subgrid;
+
+    &__heading::before {
+        content: "";
+        background-color: currentColor;
+        width: 10%;
+        height: 2px;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    &__contacts {
+        grid-column: 1 / 5;
+        width: 37rem;
+        display: flex;
+        flex-direction: column;
+
+        & > *:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__form {
+        grid-column: 5 / -1;
+        padding-left: 1.5rem;
+        display: flex;
+        flex-direction: column;
+
+        & > p {
+            margin-bottom: 2rem;
+        }
+
+        & input {
+            border: 2px solid $color-black;
+            background-color: transparent;
+            margin-bottom: 2rem;
+        }
+
+        &__message {
+            &__input {
+                height: 10rem;
+            }
+        }
+
+        & > button {
+            align-self: flex-end;
+        }
+    }
+
+    &__socials svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+}

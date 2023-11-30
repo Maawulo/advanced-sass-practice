@@ -1,0 +1,41 @@
+.booking {
+    grid-column: full-start / full-end;
+
+    background-image: url("../../media/cards-bg.webp");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 3rem;
+
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: repeat(2, min-content);
+
+    & > * {
+        margin: 3rem 0;
+    }
+
+    &__heading {
+        grid-column: center-start / center-end;
+        grid-row: 1 / 2;
+
+        & .line--black {
+            margin-bottom: 3rem;
+        }
+    }
+
+    & .cards {
+        margin: 3rem 0;
+        grid-column: center-start / center-end;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+
+    & .btn {
+        grid-column: center-start / center-end;
+        justify-self: center;
+        width: 20rem;
+
+    }
+}

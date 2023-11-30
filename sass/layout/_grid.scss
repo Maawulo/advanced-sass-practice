@@ -1,0 +1,12 @@
+.grid-container {
+    padding-top: $header-height;
+
+    display: grid;
+    grid-template-rows: 95vh repeat(3, min-content);
+    grid-template-columns:
+        [full-start] minmax(5rem, 1fr) [center-start] repeat(
+            8,
+            [col-start] minmax(min-content, 11.75rem) [col-end]
+        )
+        [center-end] minmax(5rem, 1fr) [full-end];
+}

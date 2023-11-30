@@ -1,9 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- <link
+            href="https://db.onlinewebfonts.com/c/164a60c2e090248befbcf32fdd5af386?family=Lulo+Clean+One+Bold"
+            rel="stylesheet" />
+        <link
+            href="https://db.onlinewebfonts.com/c/116af611cbcd9e4bada60b4e700430c1?family=Avenir+Light"
+            rel="stylesheet" />
+        <link
+            href="https://db.onlinewebfonts.com/c/901497541657a2f24e42848bcf7fad52?family=Avenir+Heavy"
+            rel="stylesheet" /> -->
+        <link rel="stylesheet" href="css/style.css" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Practice</title>
     </head>
-    <body></body>
+    <body>
+        <header class="header">
+            <div class="header__name-box">
+                <h2 class="header__name">Allan Johnson</h2>
+                <p class="header__profession">Personal Life Coach</p>
+            </div>
+            <nav class="navigation">
+                <ul class="navigation__items">
+                    <li class="navigation__item item--1">About</li>
+                    <li class="navigation__item item--2">Services</li>
+                    <li class="navigation__item item--3">Plans</li>
+                    <li class="navigation__item item--4">Blog</li>
+                    <li class="navigation__item item--5">Guides</li>
+                    <li class="navigation__item item--6">Contact</li>
+                </ul>
+                <button class="login-button">
+                    <svg class="login-button__icon">
+                        <use xlink:href="/media/svg/sprite.svg#icon-user-solid-circle"
+                    </svg>
+                    <p class="login-button__text">Log In</p>
+                </button>
+            </nav>
+        </header>
+
+        <div class="grid-container">
+            <section class="welcome">
+                <h2 class="welcome__heading--secondary">Ambition is the first step towards</h2>
+                <h1 class="welcome__heading--primary">Success</h1>
+                <p class="welcome__available">Now Available for Online Coaching</p>
+                <button class="btn btn--black btn-hover--white">Book Now</button>
+            </section>
+
+            <section class="about">
+                <div class="about__text">
+                    <div class="line--black"></div>
+                    <h2 class="about__text__header">
+                        About <br />
+                        Me
+                    </h2>
+                    <p class="about__text__paragraph">
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+                        Just click “Edit Text” or double click me to add your own content and make
+                        changes to the font. Feel free to drag and drop me anywhere you like on your
+                        page. ​
+                    </p>
+                    <p class="about__text__paragraph">
+                        This is a great space to write long text about your company and your
+                        services. You can use this space to go into a little more detail about your
+                        company. Talk about your team and what services you provide.
+                    </p>
+                    <button class="btn btn--black btn-hover--white">Read More</button>
+                </div>
+                <figure>
+                    <img class="about__image" src="media/about-me-img.webp" alt="" />
+                </figure>
+            </section>
+
+            <section class="booking">
+                <h2 class="booking__heading">
+                    <div class="line--black"></div>
+                    How i can <br />
+                    help you
+                </h2>
+
+                <div class="cards">
+                    <div class="card card--1">
+                        <h3 class="card__heading">Online Coaching</h3>
+                        <p class="card__description">
+                            Use this area to describe one of your services.
+                        </p>
+                        <p class="card__duration">1 hr</p>
+                        <p class="card__cost">$70</p>
+                        <button class="btn btn--black">Book It</button>
+                    </div>
+                    <div class="card card--2">
+                        <h3 class="card__heading">Couple's Guidance</h3>
+                        <p class="card__description">
+                            Use this area to describe one of your services.
+                        </p>
+                        <p class="card__duration">1 hr 30 min</p>
+                        <p class="card__cost">$120</p>
+                        <button class="btn btn--black">Book It</button>
+                    </div>
+                    <div class="card card--3">
+                        <h3 class="card__heading">Self-Improvement Workshop</h3>
+                        <p class="card__description">
+                            Use this area to describe one of your services.
+                        </p>
+                        <p class="card__days">Mon, Tue, Wed, Thu, Fri</p>
+                        <p class="card__duration">1 hr</p>
+                        <p class="card__cost">$90</p>
+                        <button class="btn btn--black">Book It</button>
+                    </div>
+                </div>
+
+                <button class="btn btn--black btn-hover--white">More services</button>
+            </section>
+
+            <footer class="footer">
+                <div class="footer__contacts">
+                    <h3 class="footer__heading">Contact</h3>
+                    <p class="footer__location">
+                        500 Terry Francine Street, <br />
+                        San Francisco, CA 94158
+                    </p>
+                    <p class="footer__phone">
+                        Tel: 123-456-7890 <br />
+                        Fax: 123-456-7890
+                    </p>
+                    <p class="footer__email">info@mysite.com</p>
+                    <div class="footer__socials">
+                        <svg>
+                            <use xlink:href="media/svg/sprite.svg#icon-facebook"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="media/svg/sprite.svg#icon-twitter"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="media/svg/sprite.svg#icon-instagram"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="media/svg/sprite.svg#icon-youtube"></use>
+                        </svg>
+                    </div>
+                    <p class="footer__copyright">
+                        © 2035 by Personal Life Coach. <br />Powered and secured by
+                        <a href="">Wix</a>
+                    </p>
+                </div>
+                <div class="footer__form">
+                    <p class="footer__form__name">Enter Your Name</p>
+                    <input class="footer__form__name__input" type="text" />
+                    <p class="footer__form__Email">Enter Your Email</p>
+                    <input class="footer__form__Email__input" type="email" />
+                    <p class="footer__form__Subject">Enter Your Subject</p>
+                    <input class="footer__form__Subject__input" type="text" />
+                    <p class="footer__form__message">Message</p>
+                    <input class="footer__form__message__input" type="text" />
+                    <button class="btn btn--black">Submit</button>
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>
