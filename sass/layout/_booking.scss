@@ -6,15 +6,11 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    padding: 3rem;
+    padding: 5rem 3rem;
 
     display: grid;
     grid-template-columns: subgrid;
     grid-template-rows: repeat(2, min-content);
-
-    & > * {
-        margin: 3rem 0;
-    }
 
     &__heading {
         grid-column: center-start / center-end;
@@ -36,6 +32,5 @@
         grid-column: center-start / center-end;
         justify-self: center;
         width: 20rem;
-
     }
 }

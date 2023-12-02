@@ -15,4 +15,8 @@
         background-color: $color-white;
         color: $color-black;
     }
+
+    &-hover--transparent:hover {
+        opacity: 0.4;
+    }
 }
