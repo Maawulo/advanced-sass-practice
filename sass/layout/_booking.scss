@@ -16,6 +16,10 @@
         grid-column: center-start / center-end;
         grid-row: 1 / 2;
 
+        @include respond(small-scren) {
+            justify-self: center;
+        }
+
         & .line--black {
             margin-bottom: 3rem;
         }
@@ -26,6 +30,11 @@
         grid-column: center-start / center-end;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+        @include respond(small-scren) {
+            justify-self: center;
+            grid-template-columns: 1fr;
+        }
     }
 
     & .btn {

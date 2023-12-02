@@ -1,0 +1,26 @@
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 1000:    Tablet portrait
+
+1000+ is where our normal styles apply
+
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) {
+            @content;
+        }
+    }
+    @if $breakpoint == small-scren {
+        @media only screen and (max-width: 62.5em) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) {
+            @content;
+        }
+    }
+}
