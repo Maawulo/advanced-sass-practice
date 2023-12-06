@@ -4,6 +4,9 @@
     display: grid;
 
     grid-template-columns: subgrid;
+    @include respond(big-phone) {
+        grid-template-columns: 1fr;
+    }
 
     &__text {
         grid-column: 2 / 6;
@@ -11,11 +14,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-
-        @include respond(small-scren) {
-            grid-column: 2 / -2;
-            justify-self: center;
+        @include respond(big-phone) {
+            padding: 3rem 5rem;
         }
+
         &__header {
             width: min-content;
             margin: 3rem 0;
@@ -36,10 +38,6 @@
 
     & figure {
         grid-column: 6 / -1;
-
-        @include respond(small-scren) {
-            grid-column: 1 / -1;
-        }
     }
 
     &__image {

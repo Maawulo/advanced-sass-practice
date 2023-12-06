@@ -60,12 +60,19 @@ body {
 }
 
 .welcome {
+    text-align: center;
     &__heading {
         &--primary {
             font-family: $font-lulo-bold;
             font-size: 11rem;
             font-weight: 400;
             line-height: 13rem;
+            @include respond(big-phone) {
+                font-size: 7rem;
+            }
+            @include respond(phone) {
+                font-size: 13vw;
+            }
         }
 
         &--secondary {
@@ -74,6 +81,10 @@ body {
             font-weight: 400;
             text-transform: uppercase;
             letter-spacing: 3px;
+
+            @include respond(phone) {
+                word-wrap: 10rem;
+            }
         }
     }
     &__available {
@@ -81,6 +92,9 @@ body {
         font-size: 2.3rem;
         font-weight: 400;
         letter-spacing: 1.15px;
+        @include respond(phone) {
+            word-wrap: 10rem;
+        }
     }
 }
 

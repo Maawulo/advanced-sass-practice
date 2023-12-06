@@ -12,13 +12,13 @@
     grid-template-columns: subgrid;
     grid-template-rows: repeat(2, min-content);
 
+    @include respond(big-phone) {
+        justify-items: center;
+    }
+
     &__heading {
         grid-column: center-start / center-end;
         grid-row: 1 / 2;
-
-        @include respond(small-scren) {
-            justify-self: center;
-        }
 
         & .line--black {
             margin-bottom: 3rem;
@@ -29,10 +29,10 @@
         margin: 3rem 0;
         grid-column: center-start / center-end;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-template-columns: repeat(3, 1fr);
 
-        @include respond(small-scren) {
-            justify-self: center;
+        @include respond(big-phone) {
             grid-template-columns: 1fr;
         }
     }

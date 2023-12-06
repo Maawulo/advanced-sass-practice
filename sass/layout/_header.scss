@@ -4,7 +4,7 @@
     width: 100%;
     position: fixed;
     display: grid;
-    grid-template-columns: minmax(3rem, 1fr) auto max-content minmax(3rem, 1fr);
+    grid-template-columns: 1fr auto max-content 1fr;
     justify-items: center;
     align-items: center;
 
@@ -16,9 +16,8 @@
         word-wrap: none;
         align-items: center;
         gap: 1.5rem;
-        grid-column: 2 / 3;
         text-align: center;
-
+        grid-column: 2 / 3;
         & > * {
             cursor: pointer;
         }
@@ -27,7 +26,42 @@
 
 .navigation {
     margin-top: -2.8rem;
-    grid-column: 3 / 4;
+
+    &__button {
+        display: none;
+
+        @include respond(big-phone) {
+            display: inline-block;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        position: relative;
+        &,
+        &::after,
+        &::before {
+            content: "";
+            background-color: $color-black;
+            width: 5rem;
+            height: 2px;
+            display: inline-block;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+
+        &::before {
+            top: -1.3rem;
+        }
+        &::after {
+            top: 1.3rem;
+        }
+    }
 
     &__item,
     .login-button {
@@ -47,6 +81,12 @@
 
     &__item {
         padding: 0 1.5rem;
+    }
+
+    & > *:not(&__button) {
+        @include respond(big-phone) {
+            display: none;
+        }
     }
 }
 

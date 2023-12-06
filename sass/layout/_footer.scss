@@ -6,6 +6,14 @@
     display: grid;
     grid-template-columns: subgrid;
 
+    @include respond(big-phone) {
+        grid-template-columns: 1fr 1.5fr;
+    }
+
+    @include respond(phone) {
+        grid-template-columns: 1fr;
+    }
+
     &__heading::before {
         content: "";
         background-color: currentColor;
@@ -17,12 +25,17 @@
 
     &__contacts {
         grid-column: 1 / 5;
-        width: 37rem;
+        max-width: 37rem;
         display: flex;
         flex-direction: column;
 
         & > *:not(:last-child) {
             margin-bottom: 3rem;
+        }
+
+        @include respond(big-phone) {
+            grid-column: auto;
+            margin-bottom: 7rem;
         }
     }
 
@@ -69,6 +82,11 @@
 
         & > button {
             align-self: flex-end;
+        }
+
+        @include respond(big-phone) {
+            grid-column: auto;
+            padding-left: 0;
         }
     }
 
